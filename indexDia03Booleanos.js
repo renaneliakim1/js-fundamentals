@@ -94,7 +94,7 @@ if(saldo === 0 ){
 // 6 - Use o operador ! para verificar se uma luz está apagada e ligue-a.
 
 
-let luzLigada = false // indica luz desligada
+/* let luzLigada = false // indica luz desligada
 
 if (!luzLigada) { //! inverte o valor da variavel luzLigada
     luzLigada = true
@@ -105,3 +105,4 @@ if (!luzLigada) { //! inverte o valor da variavel luzLigada
     alert("luz já esta desligada")
 }
 
+ */
