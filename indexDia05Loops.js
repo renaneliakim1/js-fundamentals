@@ -40,4 +40,48 @@ for ( let i = 0; i<numeros.length; i++ ){
 
 }
 
+*/
+
+
+
+/* 
+//4 - Use um while para simular um contador de 10 a 0 e exiba "Lançamento!" quando atingir 0.
+
+
+let contador = 10;
+let mensagem = "Lançamento";
+
+while (contador >= 0 ) {
+    if (contador === 0 ){
+    console.log(`${mensagem}`);
+    }else{
+    console.log(contador)
+    };   
+    contador--;
+}
+*/
+
+
+
+/* 
+//5 --Escreva um loop que calcula o fatorial de um número (ex: 5! = 5*4*3*2*1).
+
+
+let numero = 5;
+let fatorial = 1; //  iniciadocom 1, pois qualquer número multiplicado por 1 continua o mesmo
+for(let i = numero; i > 0; i--){ 
+    fatorial *=i;// a  cada iteração, multiplica fatorial pelo valor atual de i.
+}
+
+
+console.log (`O fatorial de ${numero} é ${fatorial}`);
+
+
+/* Para numero = 5, o loop realiza:
+
+iteração 1: fatorial=1×5=5fatorial = 1 
+iteração 2: fatorial=5×4=20fatorial = 5 
+iteração 3: fatorial=20×3=60fatorial = 20 
+iteração 4: fatorial=60×2=120fatorial = 60 
+iteração 5: fatorial=120×1=120fatorial = 120 
  */
