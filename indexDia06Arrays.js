@@ -58,7 +58,7 @@ console.log(tarefas)
  */
 
 
-
+/* 
 
 //5. Use `splice` para substituir o terceiro item de um array por "Substituído".
 
@@ -72,6 +72,11 @@ console.log(lista); // aqui terceiro ja aparece substituido
 
 
 
+ */
 
+/* //6. Transforme um array de palavras em uma frase completa usando `join`.
 
-//6. Transforme um array de palavras em uma frase completa usando `join`.
+const palavras = ["Transformar", "um", "array", "de", "palavras", "em", "uma", "frase", "completa"];
+const frase = palavras.join(" "); // Une as palavras com um espaço
+console.log(frase); //
+ */
