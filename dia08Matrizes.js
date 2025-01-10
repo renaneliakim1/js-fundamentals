@@ -102,13 +102,46 @@ console.log (`A quantidade de números pares: ${exibeNumerosPares(numeros)}`); /
 
 
 
-
+/* 
 
 //5. Substitua todos os valores maiores que 10 em uma matriz por `0`.
 
+let matriz = [
+    [5,12,3],
+    [8,4,15],
+    [9,10,2]
+]
 
+for (let i = 0; i < matriz.length; i++){
+    for (let j = 0; j< matriz[i].length; j++){
+        if (matriz[i] [j] > 10){ // verifica se é maior que 10
+            matriz[i][j] = 0; 
+        }
+    }
+}
 
-
+console.log(matriz);
+ */
+/* 
 //6. Implemente uma função que multiplique todos os elementos de uma matriz por um valor fornecido.
 
+function multiplicaMatriz (matriz, valor){
+    for (let i = 0; i < matriz.length; i++) {
+        for(let j = 0; j < matriz[i].length; j++){
+            matriz[i][j] *= valor;
+        }
+    }    
+    return matriz;
+}
 
+
+let matriz = [
+    [1,2,3],
+    [4,5,6],
+    [7,8,9]
+]
+
+let fator = 2; 
+
+let matrizAlterada = multiplicaMatriz(matriz, fator);
+console.log(matrizAlterada); */
