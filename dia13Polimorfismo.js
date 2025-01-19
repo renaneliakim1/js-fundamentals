@@ -122,30 +122,140 @@ class Transporte {
 
 
 
-
+/* 
 //3. Crie uma superclasse `Documento` com um método `exibirConteudo`, e subclasses como `PDF` e `Word` que personalizem esse método.
 
 
 
+class Documento {
+  constructor(titulo, conteudo) {
+      this.titulo = titulo;
+      this.conteudo = conteudo;
+  }
+
+  exibirConteudo() {
+      return `Exibindo o conteúdo do documento: \n${this.conteudo}`;
+  }
+}
+
+class PDF extends Documento {
+  exibirConteudo() {
+      return `*** PDF: ${this.titulo} ***\n${this.conteudo}\nFormato otimizado para leitura.`;
+  }
+}
+
+class Word extends Documento {
+  exibirConteudo() {
+      return `--- Word Document: ${this.titulo} ---\n${this.conteudo}\nEditável no Microsoft Word ou similares.`;
+  }
+}
+
+const documentoPDF = new PDF("Relatório Anual", "Conteúdo do relatório em PDF.");
+console.log(documentoPDF.exibirConteudo());
+
+const documentoWord = new Word("Plano de Projeto", "Conteúdo do documento Word.");
+console.log(documentoWord.exibirConteudo());
+
+ */
 
 
 
 
-
-
-
+/* 
 //4. Implemente um sistema de animais com uma superclasse `Animal` e métodos específicos em subclasses como `Passaro` e `Peixe`.
 
+// Definindo a superclasse Documento
+class Documento {
+  constructor(titulo, conteudo) {
+      this.titulo = titulo;
+      this.conteudo = conteudo;
+  }
+
+  exibirConteudo() {
+      return `Exibindo o conteúdo do documento: \n${this.conteudo}`;
+  }
+}
+
+// Subclasse PDF que estende Documento
+class PDF extends Documento {
+  exibirConteudo() {
+      return `*** PDF: ${this.titulo} ***\n${this.conteudo}\nFormato otimizado para leitura.`;
+  }
+}
+
+// Subclasse Word que estende Documento
+class Word extends Documento {
+  exibirConteudo() {
+      return `--- Word Document: ${this.titulo} ---\n${this.conteudo}\nEditável no Microsoft Word ou similares.`;
+  }
+}
+
+// Exemplos de uso
+const documentoPDF = new PDF("Relatório Anual", "Conteúdo do relatório em PDF.");
+console.log(documentoPDF.exibirConteudo());
+
+const documentoWord = new Word("Plano de Projeto", "Conteúdo do documento Word.");
+console.log(documentoWord.exibirConteudo());
 
 
 
+ */
 
 
-
-
-
-
-
+/* 
 
 
 //5. Use o polimorfismo para criar uma lista de diferentes formas geométricas (`Quadrado`, `Círculo`, etc.) e calcule suas áreas.
+
+
+
+class Forma {
+  calcularArea() {
+      throw new Error("O método calcularArea() deve ser implementado pela subclasse.");
+  }
+}
+
+class Quadrado extends Forma {
+  constructor(lado) {
+      super();
+      this.lado = lado;
+  }
+
+  calcularArea() {
+      return this.lado * this.lado;
+  }
+}
+
+class Circulo extends Forma {
+  constructor(raio) {
+      super();
+      this.raio = raio;
+  }
+
+  calcularArea() {
+      return Math.PI * this.raio * this.raio;
+  }
+}
+
+class Retangulo extends Forma {
+  constructor(base, altura) {
+      super();
+      this.base = base;
+      this.altura = altura;
+  }
+
+  calcularArea() {
+      return this.base * this.altura;
+  }
+}
+
+const formas = [
+  new Quadrado(4),
+  new Circulo(3),
+  new Retangulo(5, 2)
+];
+
+formas.forEach(forma => {
+  console.log(`Área: ${forma.calcularArea().toFixed(2)}`);
+});
+ */
